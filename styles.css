@@ -1,1 +1,65 @@
+#MainHeader {
+  background: linear-gradient(to right, #42f5e8, #4287f5, #a772e8);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px
+}
 
+.profile {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px
+  
+}
+
+#MainContent {
+  background: linear-gradient(to top, #3E5F44, #5E936C, #93DA97, #E8FFD7);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px
+}
+
+#name {
+  font-family: sans-serif;
+  animation: color-change 5s infinite alternate; /* Applies the animation */
+}
+
+@keyframes color-change {
+  0% {
+    color: red; 
+  }
+  10% {
+    color: orange; 
+  }
+  20% {
+    color: yellow; 
+  }
+  30% {
+    color: #00ff08; 
+  }
+  40% {
+    color: #02f296; 
+  }
+  50% {
+    color: #0aebff;
+  }
+  60% {
+    color: #0a78ff;
+  }
+  70% {
+    color: #0000ff;
+  }
+  80% {
+    color: #7700ff;
+  }
+  90% {
+    color: #f200ff;
+  }
+  100% {
+    color: red;
+  }
+}
