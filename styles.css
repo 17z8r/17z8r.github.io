@@ -1,3 +1,7 @@
+body {
+  background-color: #1a1a1a;
+}
+
 #MainHeader {
   background: linear-gradient(to right, #42f5e8, #4287f5, #a772e8);
   border-radius: 12px;
