@@ -36,7 +36,7 @@ html, body {
 
 #name {
   font-family: sans-serif;
-  animation: color-change 5s infinite alternate; /* Applies the animation */
+  animation: color-change 5s infinite alternate; 
 }
 
 @keyframes color-change {
