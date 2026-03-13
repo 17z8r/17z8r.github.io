@@ -1,11 +1,11 @@
 body {
   background-color: #1a1a1a;
-  margin: 10;
+  margin: 25;
 }
 
 html, body {
   height: 100%;
-  margin: 0;
+  margin: 25;
 }
 
 #MainHeader {
