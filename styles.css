@@ -1,76 +1,85 @@
 body {
-  background-color: #1a1a1a;
-  margin: 25;
-}
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 
-html, body {
-  height: 100%;
-  margin: 25;
-}
-
-#MainHeader {
-  background: linear-gradient(to right, #42f5e8, #4287f5, #a772e8);
-  border-radius: 12px;
-  text-align: center;
   color: white;
-  font-family: sans-serif;
-  height: 70vh;
-  padding: 10px
+  font-family: 'Poppins', sans-serif;
+
+  background-image: url('https://github.com/dharmx/walls/blob/main/apeiros/a_foggy_forest_with_trees.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  backdrop-filter: blur(8px);
 }
 
-.profile {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px 
+
+.container {
+  width: 65vw;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
 }
 
-#MainContent {
-  background: linear-gradient(to bottom, #3E5F44, #5E936C, #93DA97, #E8FFD7);
-  border-radius: 12px;
-  text-align: center;
-  color: white;
-  font-family: sans-serif;
-  height: 30vh;
-  padding: 10px
+#progress-container {
+  width: 65vw;
+  height: 10vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+}
+/* desktops */
+
+@media (max-width: 1440px) {
+  .container {
+    width: 65vw;
+    height: 60vh;
+  }
+
+  #progress-container {
+    width: 65vw;
+    height: 10vh;
+  }
 }
 
-#name {
-  font-family: sans-serif;
-  animation: color-change 5s infinite alternate; 
+/* tablets */
+
+@media (max-width: 1024px) {
+  .container {
+    width: 80vw;
+    height: 85vh;
+  }
+
+  #progress-container {
+    width: 80vw;
+    height: 10vh;
+  }
 }
 
-@keyframes color-change {
-  0% {
-    color: red; 
+/* mobile */
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+    height: 95vh;
   }
-  10% {
-    color: orange; 
-  }
-  20% {
-    color: yellow; 
-  }
-  30% {
-    color: #00ff08; 
-  }
-  40% {
-    color: #02f296; 
-  }
-  50% {
-    color: #0aebff;
-  }
-  60% {
-    color: #0a78ff;
-  }
-  70% {
-    color: #0000ff;
-  }
-  80% {
-    color: #7700ff;
-  }
-  90% {
-    color: #f200ff;
-  }
-  100% {
-    color: red;
+
+  #progress-container {
+    width: 90vw;
+    height: 10vh;
   }
 }
