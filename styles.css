@@ -1,13 +1,11 @@
 body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
   color: white;
   font-family: 'Poppins', sans-serif;
 
@@ -19,40 +17,84 @@ body {
   backdrop-filter: blur(8px);
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 .container {
-  width: 65vw;
-  height: 60vh;
-  margin: 0 auto;
+  width: 65dvw;
+  min-height: 250px;
+  height: auto;
   padding: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   backdrop-filter: blur(8px);
 }
 
-#progress-container {
-  width: 65vw;
-  height: 10vh;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.1);
+details {
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  backdrop-filter: blur(8px);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+summary {
+  cursor: pointer;
+  font-size: clamp(1rem, calc(1.5vw + 0.5rem), 3rem);
+}
+
+.profile {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://avatars.githubusercontent.com/u/138408088?v=4');
+  background-size: cover;
+  background-position: center;
+}
+
+meter {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 14px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+h1,
+h2,
+p,
+summary,
+details,
+.small {
+  font-size: clamp(0.9rem, calc(1.3vw + 0.5rem), 5rem);
+}
+
+a {
+  color: white;
+}
+
+.small {
+  font-size: clamp(0.4rem, calc(0.8vw + 0.3rem), 2.3rem);
+}
+
 /* desktops */
 
 @media (max-width: 1440px) {
   .container {
-    width: 65vw;
-    height: 60vh;
-  }
-
-  #progress-container {
-    width: 65vw;
-    height: 10vh;
+    width: 65dvw;
+    height: auto;
   }
 }
 
@@ -60,13 +102,9 @@ body {
 
 @media (max-width: 1024px) {
   .container {
-    width: 80vw;
-    height: 85vh;
-  }
-
-  #progress-container {
-    width: 80vw;
-    height: 10vh;
+    width: 80dvw;
+    min-height: 60dvh;
+    height: auto;
   }
 }
 
@@ -74,12 +112,9 @@ body {
 
 @media (max-width: 600px) {
   .container {
-    width: 90vw;
-    height: 95vh;
-  }
-
-  #progress-container {
-    width: 90vw;
-    height: 10vh;
+    width: 90dvw;
+    min-width: 0;
+    height: auto;
+    min-height: 95dvh;
   }
 }
